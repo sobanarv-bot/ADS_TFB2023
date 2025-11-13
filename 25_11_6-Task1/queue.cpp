@@ -16,8 +16,8 @@ public:
 // Queue class
 class Queue {
 private:
-    Node* front;   // front of queue (dequeue from here)
-    Node* rear;    // rear of queue (enqueue here)
+    Node* front;   
+    Node* rear;   
     int size;
     int maxSize;
 
@@ -40,7 +40,7 @@ public:
         return size >= maxSize;
     }
 
-    // Enqueue (insert at rear)
+    // Enqueue 
     void enqueue(string value) {
         if (isFull()) {
             cout << "Queue overflow! Cannot enqueue '" << value << "' — queue is full.\n";
@@ -60,7 +60,7 @@ public:
         cout << value << " enqueued to queue.\n";
     }
 
-    // Dequeue (remove from front)
+    // Dequeue 
     void dequeue() {
         if (isEmpty()) {
             cout << "Queue underflow! Nothing to dequeue.\n";
